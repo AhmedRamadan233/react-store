@@ -1,11 +1,12 @@
 import { GET_ALL_CATEGORY, GET_ERROR } from "../type";
-
-import baseUrl from "../../Api/baseURL";
+import useGetData from "../../hooks/useGetData";
 
 const getAllCategory = () => async (dispatch) => {
   try {
-    const res = await baseUrl.get("/api/dashboard/categories");
-    console.log(res.data);
+    // const res = await baseUrl.get("/api/dashboard/categories");
+    // console.log(res.data);
+
+    const res = await useGetData("/api/dashboard/categories");
     dispatch({
       type: GET_ALL_CATEGORY,
       payload: res.data,
