@@ -1,0 +1,14 @@
+/* YourComponent.css */
+.spinner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .custom-spinner {
+    /* Add any custom styles you want for the spinner here */
+    width: 100px; /* Adjust the spinner size */
+    height: 100px; /* Adjust the spinner size */
+    color: red; /* Change the spinner color */
+  }
+  
